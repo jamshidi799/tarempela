@@ -1,0 +1,68 @@
+@font-face {
+  font-family: KalamehWeb;
+  src: url(./fonts/KalamehWeb_Bold.eot);
+  src: url("/assets/fonts/vazir/Vazir-Light-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url(./fonts/KalamehWeb_Bold.woff2) format("woff2"),
+    url(./fonts/KalamehWeb_Bold.woff) format("woff"),
+    url(./fonts/KalamehWeb_Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: KalamehWeb;
+  src: url(./fonts/KalamehWeb_Black.eot);
+  src: url("/assets/fonts/vazir/Vazir-Light-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url(./fonts/KalamehWeb_Black.woff2) format("woff2"),
+    url(./fonts/KalamehWeb_Black.woff) format("woff"),
+    url(./fonts/KalamehWeb_Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: KalamehWeb;
+  src: url(./fonts/KalamehWeb_Regular.eot);
+  src: url("/assets/fonts/vazir/Vazir-Light-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url(./fonts/KalamehWeb_Regular.woff2) format("woff2"),
+    url(./fonts/KalamehWeb_Regular.woff) format("woff"),
+    url(./fonts/KalamehWeb_Regular.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: KalamehWeb;
+  src: url(./fonts/KalamehWeb_thin.eot);
+  src: url("/assets/fonts/vazir/Vazir-Light-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url(./fonts/KalamehWeb_thin.woff2) format("woff2"),
+    url(./fonts/KalamehWeb_thin.woff) format("woff"),
+    url(./fonts/KalamehWeb_thin.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@import "bootstrap/scss/bootstrap-reboot";
+@import "bootstrap/scss/bootstrap-grid";
+
+* {
+  font-family: KalamehWeb;
+  text-align: right;
+  direction: rtl;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}

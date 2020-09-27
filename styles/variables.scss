@@ -1,0 +1,22 @@
+$primary: #235c8b;
+$text-color: #5a5c5f;
+$secondary: rgb(204, 204, 204);
+$danger: #ba3952;
+$success: #4caf50;
+$purple: rgb(99, 48, 112);
+$gray: lighten(
+  $color: gray,
+  $amount: 10,
+);
+$lightgray: lighten(
+  $color: $secondary,
+  $amount: 10,
+);
+$orange: orange;
+
+$font-xsm: 16px;
+$font-sm: 18px;
+$font-md: 22px;
+$font-lg: 26px;
+$font-xl: 35px;
+$font-xxl: 38px;
