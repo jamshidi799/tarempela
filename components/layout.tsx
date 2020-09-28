@@ -3,12 +3,11 @@ import Header from './common/header';
 import Navbar from './common/navbar';
 import Footer from './common/footer';
 
-const name = '[Your Name]';
 export const siteTitle = 'Next.js Sample Website';
 
-export default function Layout({ children }) {
+export default function Layout({ children, isCantanier }) {
   return (
-    <div className={styles.container}>
+    <div className={isCantanier ? 'container' : ''}>
       <Header />
       <Navbar />
       <main>{children}</main>
