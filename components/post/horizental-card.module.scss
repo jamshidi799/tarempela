@@ -1,0 +1,16 @@
+.horizental_card {
+  padding: 20px 0px 20px 10px;
+  display: flex;
+  img {
+    width: 30%;
+    border-radius: 4px;
+    margin-left: 20px;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  }
+  .content {
+    font-size: 20px;
+    width: 100%;
+  }
+}

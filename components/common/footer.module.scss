@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 0px;
+  .desc {
+    font-size: $font-sm;
+    text-align: justify;
+  }
+  .item {
+    font-size: $font-md;
+    cursor: pointer;
+  }
+  .info {
+    margin-right: 10px;
+    font-size: $font-md;
+  }
+  .copyRight {
+    text-align: center;
+    font-size: $font-xl;
+  }
+}
