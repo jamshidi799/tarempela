@@ -5,6 +5,7 @@ import Date from '../../components/date';
 import { getSortedPostsData } from '../../lib/posts';
 import Posts from '../../components/post/posts';
 import style from './id.module.scss';
+import Image from '../../components/image';
 
 export default function Post({ postData, allPostsData }) {
   return (
@@ -21,7 +22,7 @@ export default function Post({ postData, allPostsData }) {
             </div>
           </div>
         </div>
-
+        {/* <Image src={`${postData.id}.png`} /> */}
         <img src={`/images/${postData.id}.png`} alt="" />
         <div className="container">
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} className={style.content} />

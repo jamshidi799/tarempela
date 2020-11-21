@@ -8,13 +8,16 @@ import React from 'react';
 import style from './navbar.module.scss';
 import { useEffect } from 'react';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Switch from '@material-ui/core/Switch';
 
 interface Props {
   window?: () => Window;
   children: React.ReactElement;
 }
 
-function HideOnScroll(props: Props) {
+function HideOnScroll(props) {
   const { children, window } = props;
   const trigger = useScrollTrigger({ target: window ? window() : undefined });
 
@@ -33,13 +36,13 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function Navbar(props: Props) {
+export default function Navbar({ handleThemeChange, isDark }) {
   const classes = useStyles();
 
   return (
     <div className={style.navbar}>
       <CssBaseline />
-      <HideOnScroll {...props}>
+      <HideOnScroll>
         <AppBar color="inherit" className={classes.root}>
           <Toolbar>
             <Link href="/blog" passHref>
@@ -51,6 +54,9 @@ export default function Navbar(props: Props) {
             <Link href="/aboutUs" passHref>
               <a className={style.nav_item}>درباره طارم‌پلا</a>
             </Link>
+
+            <span className={style.nav_item}>{isDark ? 'تاریک' : 'روشن'}</span>
+            <Switch checked={isDark} onChange={handleThemeChange} color="primary" />
           </Toolbar>
         </AppBar>
       </HideOnScroll>

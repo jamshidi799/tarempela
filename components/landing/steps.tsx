@@ -39,7 +39,12 @@ export default function Steps() {
               <Typography variant="h6" component="h1">
                 Eat
               </Typography>
-              <Typography>Because you need strength</Typography>
+              <Typography>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است
+                </p>
+              </Typography>
             </Paper>
           </TimelineContent>
         </TimelineItem>
@@ -53,7 +58,12 @@ export default function Steps() {
               <Typography variant="h6" component="h1">
                 Code
               </Typography>
-              <Typography>Because it&apos;s awesome!</Typography>
+              <Typography>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است
+                </p>
+              </Typography>
             </Paper>
           </TimelineContent>
         </TimelineItem>
@@ -67,7 +77,12 @@ export default function Steps() {
               <Typography variant="h6" component="h1">
                 Sleep
               </Typography>
-              <Typography>Because you need rest</Typography>
+              <Typography>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است
+                </p>
+              </Typography>
             </Paper>
           </TimelineContent>
         </TimelineItem>
@@ -80,7 +95,12 @@ export default function Steps() {
               <Typography variant="h6" component="h1">
                 Repeat
               </Typography>
-              <Typography>Because this is the life you love!</Typography>
+              <Typography>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است
+                </p>
+              </Typography>
             </Paper>
           </TimelineContent>
         </TimelineItem>

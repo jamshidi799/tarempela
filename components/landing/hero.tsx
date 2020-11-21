@@ -1,6 +1,8 @@
 import { Parallax } from 'react-parallax';
 import style from './hero.module.scss';
 import { useEffect, createRef, useState } from 'react';
+import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
 
 export default function Hero() {
   const heroRef = createRef();
@@ -36,10 +38,10 @@ export default function Hero() {
     <Parallax blur={{ min: -15, max: 15 }} bgImage={'images/hero.jpg'} bgImageAlt="the dog" strength={-200}>
       <div className={style.hero} onMouseMove={onMove} ref={heroRef}>
         <div className={style.overlay}></div>
-        <div className={style.popup} ref={popupRef}>
+        <Paper elevation={3} className={style.popup} ref={popupRef}>
           <h1 className="m-3 text-center">برنج طارم پلا</h1>
           <h3>ارسال برنج به همه‌ی نقاط کشور</h3>
-        </div>
+        </Paper>
       </div>
     </Parallax>
   );
