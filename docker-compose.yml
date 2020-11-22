@@ -14,7 +14,7 @@ services:
     image: nginx:latest
     container_name: react-nginx
     ports:
-      - '8585:8585'
+      - '80:80'
     volumes:
       - ./deploy/nginx:/etc/nginx/conf.d
     depends_on:
