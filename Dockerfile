@@ -6,9 +6,9 @@ RUN mkdir ${APP_ROOT}
 WORKDIR ${APP_ROOT}
 ADD . ${APP_ROOT}
 
-RUN yarn install
-RUN yarn install -g serve
-RUN yarn build
-RUN yarn start
+RUN npm install
+RUN npm install -g serve
+RUN npm run-script build
+RUN npm start
 
 ENV HOST 0.0.0.0

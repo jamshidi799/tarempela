@@ -16,18 +16,13 @@ export default function Hero() {
     var moveForce = 10; // max popup movement in pixels
     var rotateForce = 10; // max popup rotation in deg
     const area = heroRef.current;
-
     var docX = area.offsetWidth;
     var docY = area.offsetHeight;
-
     console.log(docX);
-
     var moveX = ((e.pageX - docX / 2) / (docX / 2)) * -moveForce;
     var moveY = ((e.pageY - docY / 2) / (docY / 2)) * -moveForce;
-
     var rotateY = (e.pageX / docX) * rotateForce * 2 - rotateForce;
     var rotateX = -((e.pageY / docY) * rotateForce * 2 - rotateForce);
-
     const popup = popupRef.current;
     popup.style.left = moveX + 'px';
     popup.style.top = moveY + 'px';
