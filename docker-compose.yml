@@ -16,6 +16,6 @@ services:
     ports:
       - '80:80'
     volumes:
-      - ./deploy/nginx:/etc/nginx/conf.d
+      - ./deploy/nginx/default.conf:/etc/nginx/conf.d
     depends_on:
       - react
