@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+  react:
+    build: .
+    container_name: nextjs
+    stdin_open: true
+    tty: true
+    ports:
+      - '3000:3000'
+    command: 'serve -s build -l 3000'
+
+  nginx:
+    image: nginx:latest
+    container_name: react-nginx
+    ports:
+      - '80:80'
+    volumes:
+      - ./deploy/nginx/default.conf:/etc/nginx/conf.d
+    depends_on:
+      - react
