@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Layout from '../../components/layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
@@ -5,7 +6,6 @@ import Date from '../../components/date';
 import { getSortedPostsData } from '../../lib/posts';
 import Posts from '../../components/post/posts';
 import style from './id.module.scss';
-import Image from '../../components/image';
 
 export default function Post({ postData, allPostsData }) {
   return (
@@ -22,8 +22,7 @@ export default function Post({ postData, allPostsData }) {
             </div>
           </div>
         </div>
-        {/* <Image src={`${postData.id}.png`} /> */}
-        <img src={`/images/${postData.id}.png`} alt="" />
+        <Image src={`/images/${postData.id}.png`} alt="Picture of the author" layout="responsive" width={700} height={475} />
         <div className="container">
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} className={style.content} />
           <div>

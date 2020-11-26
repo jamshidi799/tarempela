@@ -1,10 +1,14 @@
+import Image from 'next/image';
 import style from './horizental-card.module.scss';
 import Typography from '@material-ui/core/Typography';
 
 export default function HorizentalPostCard({ title, id, date }) {
   return (
     <div className={style.horizental_card}>
-      <img src={`/images/${id}.png`} alt="tarempella" />
+      <div className={style.image_wrapper}>
+        <Image src={`/images/${id}.png`} alt="tarempella" layout="fill" objectFit="cover" />
+      </div>
+      {/* <img src={`/images/${id}.png`} alt="tarempella" /> */}
       <div className={style.content}>
         <Typography color="textSecondary" className="mb-3">
           {date}

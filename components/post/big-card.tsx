@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import style from './big-card.module.scss';
 import Typography from '@material-ui/core/Typography';
 
 export default function BigPostCard({ title, id, date }) {
   return (
     <div className={style.big_post_card}>
-      <img src={`/images/${id}.png`} alt="tarempella" />
+      <Image src={`/images/${id}.png`} alt="tarempella" layout="responsive" width={700} height={475} />
       <Typography variant="h6" color="textSecondary" className={style.date}>
         {date}
       </Typography>

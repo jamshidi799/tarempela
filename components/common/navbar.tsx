@@ -39,6 +39,10 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function Navbar({ handleThemeChange, isDark }) {
   const classes = useStyles();
 
+  useEffect(() => {
+    console.log(isDark);
+  }, []);
+
   return (
     <div className={style.navbar}>
       <CssBaseline />
@@ -55,8 +59,8 @@ export default function Navbar({ handleThemeChange, isDark }) {
               <a className={style.nav_item}>درباره طارم‌پلا</a>
             </Link>
 
-            <span className={style.nav_item}>{isDark ? 'تاریک' : 'روشن'}</span>
-            <Switch checked={isDark} onChange={handleThemeChange} color="primary" />
+            {/* <span className={style.nav_item}>{isDark ? 'تاریک' : 'روشن'}</span>
+            <Switch checked={isDark} onChange={handleThemeChange} color="primary" /> */}
           </Toolbar>
         </AppBar>
       </HideOnScroll>

@@ -1,5 +1,5 @@
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import styles from './layout.module.scss';
 import Header from './common/header';
 import Navbar from './common/navbar';
@@ -9,10 +9,9 @@ export const siteTitle = 'Next.js Sample Website';
 
 export default function Layout({ children, isCantanier }) {
   const [darkState, setDarkState] = useState(true);
-  const palletType = darkState ? 'dark' : 'light';
-  const darkTheme = createMuiTheme({
+  const theme = createMuiTheme({
     palette: {
-      type: palletType,
+      type: darkState ? 'dark' : 'light',
       primary: {
         main: '#2e7d32',
       },
@@ -25,7 +24,7 @@ export default function Layout({ children, isCantanier }) {
   return (
     <div className={isCantanier ? 'container' : ''}>
       <Header />
-      <ThemeProvider theme={darkTheme}>
+      <ThemeProvider theme={theme}>
         <Navbar handleThemeChange={handleThemeChange} isDark={darkState} />
         <main>{children}</main>
         <Footer />
