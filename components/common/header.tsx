@@ -1,21 +1,18 @@
 import Head from 'next/head';
 
-const name = '[Your Name]';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'طارم پلا';
 
 export default function Header() {
   return (
     <Head>
       <link rel="icon" href="/favicon.ico" />
-      <meta name="description" content="Learn how to build a personal website using Next.js" />
-      <meta
-        property="og:image"
-        content={`https://og-image.now.sh/${encodeURI(
-          siteTitle
-        )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-      />
-      <meta name="og:title" content={siteTitle} />
-      <meta name="twitter:card" content="summary_large_image" />
+
+      <meta property="og:title" content="طارم پلا برنج درجه یک مازندران" />
+      <meta property="og:site_name" content="tarempela" />
+      <meta property="og:url" content="http://tarempela.ir/" />
+      <meta property="og:description" content="طارم پلا برنج طارم درجه یک مازندران ارسال به تمام نقاط ایران" />
+      <meta property="og:type" content="business.business" />
+      <meta property="og:image" content="https://drive.google.com/file/d/1J8Uu703fgfUD_C2vx96kNeatYEBV2yw9/view?usp=sharing" />
       <meta name="google-site-verification" content="ZtmciE-XG3LcOjDs5SjrppiQGqSPFZK446hs2uUJjPE" />
     </Head>
   );

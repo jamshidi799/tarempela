@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout isCantanier={false}>
       <Head>
-        <></>
+        <title>طارم پلا برنج اصیل مازندران</title>
       </Head>
 
       <Hero />
