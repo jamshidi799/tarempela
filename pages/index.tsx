@@ -10,7 +10,9 @@ import { getSortedPostsData } from '../lib/posts';
 export default function Home({ allPostsData }) {
   return (
     <Layout isCantanier={false}>
-      <Head></Head>
+      <Head>
+        <></>
+      </Head>
 
       <Hero />
       <section className="container mt-5 mb-5">

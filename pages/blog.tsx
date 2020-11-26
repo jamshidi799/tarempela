@@ -9,7 +9,9 @@ import HorizentalPostCard from '../components/post/horizental-card';
 export default function Home({ allPostsData }) {
   return (
     <Layout isCantanier={false}>
-      <Head></Head>
+      <Head>
+        <></>
+      </Head>
 
       <section className="container">
         <div className="row">

@@ -1,16 +1,13 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-const name = "[Your Name]";
-export const siteTitle = "Next.js Sample Website";
+const name = '[Your Name]';
+export const siteTitle = 'Next.js Sample Website';
 
 export default function Header() {
   return (
     <Head>
       <link rel="icon" href="/favicon.ico" />
-      <meta
-        name="description"
-        content="Learn how to build a personal website using Next.js"
-      />
+      <meta name="description" content="Learn how to build a personal website using Next.js" />
       <meta
         property="og:image"
         content={`https://og-image.now.sh/${encodeURI(
@@ -19,6 +16,7 @@ export default function Header() {
       />
       <meta name="og:title" content={siteTitle} />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="google-site-verification" content="ZtmciE-XG3LcOjDs5SjrppiQGqSPFZK446hs2uUJjPE" />
     </Head>
   );
 }

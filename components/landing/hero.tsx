@@ -1,12 +1,12 @@
 import { Parallax } from 'react-parallax';
 import style from './hero.module.scss';
-import { useEffect, createRef, useState } from 'react';
+import { useEffect, createRef, useState, useRef } from 'react';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 
 export default function Hero() {
-  const heroRef = createRef();
-  const popupRef = createRef();
+  const heroRef = useRef();
+  const popupRef = useRef();
   const [index, setIndex] = useState(0);
   useEffect(() => {}, []);
 
@@ -15,7 +15,7 @@ export default function Hero() {
     if (index % 5 !== 0) return;
     var moveForce = 10; // max popup movement in pixels
     var rotateForce = 10; // max popup rotation in deg
-    const area = heroRef.current;
+    const area: { offsetWidth?: number; offsetHeight?: number } = heroRef.current;
     var docX = area.offsetWidth;
     var docY = area.offsetHeight;
     console.log(docX);
@@ -23,7 +23,7 @@ export default function Hero() {
     var moveY = ((e.pageY - docY / 2) / (docY / 2)) * -moveForce;
     var rotateY = (e.pageX / docX) * rotateForce * 2 - rotateForce;
     var rotateX = -((e.pageY / docY) * rotateForce * 2 - rotateForce);
-    const popup = popupRef.current;
+    const popup: { style?: any } = popupRef.current;
     popup.style.left = moveX + 'px';
     popup.style.top = moveY + 'px';
     popup.style.transform = 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
