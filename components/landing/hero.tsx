@@ -1,8 +1,7 @@
-import Image from 'next/image';
-import style from './hero.module.scss';
-import { useEffect, createRef, useState, useRef } from 'react';
-import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
+import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
+import style from './hero.module.scss';
 
 export default function Hero() {
   const heroRef = useRef();
@@ -32,13 +31,13 @@ export default function Hero() {
   return (
     <div className={style.hero} onMouseMove={onMove} ref={heroRef}>
       <div className={style.image_wrapper}>
-        <Image src="/images/hero.jpg" alt="Picture of the author" layout="fill" />
+        <Image src="/images/parallax.webp" alt="Picture of the author" layout="fill" />
       </div>
       <div className={style.overlay}></div>
-      <Paper elevation={3} className={style.popup} ref={popupRef}>
+      <div className={style.popup} ref={popupRef}>
         <h1 className="m-3 text-center">برنج طارم پلا</h1>
         <h3>ارسال برنج به همه‌ی نقاط کشور</h3>
-      </Paper>
+      </div>
     </div>
   );
 }

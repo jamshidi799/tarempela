@@ -44,7 +44,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
-  const allPostsData = getSortedPostsData().slice(0, 3);
+  const allPostsData = getSortedPostsData().slice(0, 4);
   return {
     props: {
       postData,

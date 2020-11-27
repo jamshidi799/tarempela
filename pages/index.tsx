@@ -6,6 +6,7 @@ import Steps from '../components/landing/steps';
 import Layout from '../components/layout';
 import Posts from '../components/post/posts';
 import { getSortedPostsData } from '../lib/posts';
+import styles from './index.module.scss';
 
 export default function Home({ allPostsData }) {
   return (
@@ -16,7 +17,7 @@ export default function Home({ allPostsData }) {
 
       <Hero />
       <section className="container mt-5 mb-5">
-        <h2>Blog</h2>
+        <h1 className={styles.blog_heading}>اطلاعات بیشتر درمورد انواع برنج و طرز پخت</h1>
         <Posts posts={allPostsData} />
       </section>
       <Parallax />
@@ -29,7 +30,7 @@ export default function Home({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData().slice(0, 3);
+  const allPostsData = getSortedPostsData().slice(0, 4);
   return {
     props: {
       allPostsData,

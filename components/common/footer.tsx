@@ -7,7 +7,7 @@ export default function Footer() {
     <div className={style.footer}>
       <div className="container">
         <div className="row">
-          <div className="col-4">
+          <div className="col-12 col-lg-4">
             <h1>طارم پلا</h1>
             <p className={style.desc}>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
@@ -15,7 +15,7 @@ export default function Footer() {
               باشد. کتابهای زیادی در شصت و سه درصد گذشته
             </p>
           </div>
-          <div className="col-4">
+          <div className="col-12 col-sm-6 col-lg-4">
             <h1>تماس باما</h1>
             <div className="d-flex align-items-center mb-3">
               <Phone />
@@ -30,7 +30,7 @@ export default function Footer() {
               <h5 className={style.info}>jamshidi.m799@gmail.com</h5>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-12 col-sm-6 col-lg-4">
             <h1>محصولات</h1>
             <div className={style.item}>برنج طارم</div>
             <div className={style.item}>برنج طارم</div>
