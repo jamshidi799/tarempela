@@ -36,61 +36,41 @@ export default function Questions() {
     <div className={classes.root}>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1bh-content" id="panel1bh-header">
-          <Typography className={classes.heading}>سوال اول</Typography>
-          <Typography className={classes.secondaryHeading}>I am an accordion</Typography>
+          <h3 className={classes.heading}>سوال اول</h3>
+          <h3 className={classes.secondaryHeading}>چگونه باید سفارش بدهیم</h3>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            <span>
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-              مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-              باشد. کتابهای زیادی در شصت و سه درصد گذشته
-            </span>
-          </Typography>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+            در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            کتابهای زیادی در شصت و سه درصد گذشته
+          </p>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2bh-content" id="panel2bh-header">
-          <Typography className={classes.heading}>سوال دوم</Typography>
-          <Typography className={classes.secondaryHeading}>You are currently not an owner</Typography>
+          <h3 className={classes.heading}>سوال دوم</h3>
+          <h3 className={classes.secondaryHeading}>روش ارسال چگونه است</h3>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            <span>
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-              مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-              باشد. کتابهای زیادی در شصت و سه درصد گذشته
-            </span>
-          </Typography>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+            در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            کتابهای زیادی در شصت و سه درصد گذشته
+          </p>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel3bh-content" id="panel3bh-header">
-          <Typography className={classes.heading}>سوال سوم</Typography>
-          <Typography className={classes.secondaryHeading}>Filtering has been entirely disabled for whole web server</Typography>
+          <h3 className={classes.heading}>سوال سوم</h3>
+          <h3 className={classes.secondaryHeading}>طریقه صحیح پخت برنج چگونه است</h3>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            <span>
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-              مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-              باشد. کتابهای زیادی در شصت و سه درصد گذشته
-            </span>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel4bh-content" id="panel4bh-header">
-          <Typography className={classes.heading}>سوال چهارم</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            <span>
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-              مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-              باشد. کتابهای زیادی در شصت و سه درصد گذشته
-            </span>
-          </Typography>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+            در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            کتابهای زیادی در شصت و سه درصد گذشته
+          </p>
         </AccordionDetails>
       </Accordion>
     </div>

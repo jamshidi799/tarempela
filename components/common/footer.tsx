@@ -15,22 +15,22 @@ export default function Footer() {
               باشد. کتابهای زیادی در شصت و سه درصد گذشته
             </p>
           </div>
-          <div className="col-12 col-sm-6 col-lg-4">
+          <div className="col-6 col-lg-4">
             <h1>تماس باما</h1>
             <div className="d-flex align-items-center mb-3">
               <Phone />
-              <h5 className={style.info}>0911 127 6818</h5>
+              <h6 className={style.info}>0911 127 6818</h6>
             </div>
             <div className="d-flex align-items-center mb-3">
               <Phone />
-              <h5 className={style.info}>0911 127 6818</h5>
+              <h6 className={style.info}>0911 127 6818</h6>
             </div>
             <div className="d-flex align-items-center mb-3">
               <Email />
-              <h5 className={style.info}>jamshidi.m799@gmail.com</h5>
+              <h6 className={style.info}>tarempela@gmail.com</h6>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-lg-4">
+          <div className="col-6 col-lg-4">
             <h1>محصولات</h1>
             <div className={style.item}>برنج طارم</div>
             <div className={style.item}>برنج طارم</div>

@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import style from './card.module.scss';
+import Date from '@components/date';
 
 const useStyles = makeStyles({
   root: {
@@ -33,7 +34,9 @@ export default function PostCard({ title, id, date }) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>{date}</CardActions>
+      <CardActions>
+        <Date dateString={date} />
+      </CardActions>
     </Card>
   );
 }
