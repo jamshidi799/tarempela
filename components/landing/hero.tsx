@@ -1,4 +1,3 @@
-import Paper from '@material-ui/core/Paper';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import style from './hero.module.scss';

@@ -1,107 +1,47 @@
-import Paper from '@material-ui/core/Paper';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Timeline from '@material-ui/lab/Timeline';
-import TimelineConnector from '@material-ui/lab/TimelineConnector';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import TimelineDot from '@material-ui/lab/TimelineDot';
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
-import React from 'react';
-import useWindowWidth from '../../hooks/useWindowWidth';
-
-const useStyles = makeStyles(theme => ({
-  paper: {
-    padding: '6px 16px',
-  },
-  secondaryTail: {
-    backgroundColor: theme.palette.secondary.main,
-  },
-}));
+import Image from 'next/image';
+import style from './step.module.scss';
 
 export default function Steps() {
-  const classes = useStyles();
-  const windowDimensions = useWindowWidth();
-
   return (
-    <div className="mt-5">
-      <Timeline align={windowDimensions < 768 ? 'left' : 'alternate'}>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot></TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
-              <Typography variant="h6" component="h1">
-                Eat
-              </Typography>
-              <Typography>
-                <span>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است
-                </span>
-              </Typography>
-            </Paper>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot color="primary"></TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
-              <Typography variant="h6" component="h1">
-                Code
-              </Typography>
-              <Typography>
-                <span>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است
-                </span>
-              </Typography>
-            </Paper>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot color="primary" variant="outlined"></TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
-              <Typography variant="h6" component="h1">
-                Sleep
-              </Typography>
-              <Typography>
-                <span>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است
-                </span>
-              </Typography>
-            </Paper>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot color="secondary"></TimelineDot>
-          </TimelineSeparator>
-          <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
-              <Typography variant="h6" component="h1">
-                Repeat
-              </Typography>
-              <Typography>
-                <span>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است
-                </span>
-              </Typography>
-            </Paper>
-          </TimelineContent>
-        </TimelineItem>
-      </Timeline>
+    <div className="container mt-5">
+      <div className="row justify-content-md-around mb-5">
+        <div className="col-sm-12 col-md-5 order-2 order-md-1 h-100">
+          <Image src="/images/banner1.jpg" alt="tarempela طارم پلا" layout="responsive" width={700} height={475} />
+        </div>
+        <div className="col-sm-12 col-md-7 order-1 order-md-2 d-flex flex-column justify-content-md-center mb-3 mb-lg-0">
+          <h1 className="text-right mb-5">بچه غاز اوکراینی</h1>
+          <p>
+            قوغازها در سال‌های اخیر علاقه مردم را به خود جذب کرده است. دراین بین بچه غازهای اوکراینی به‌دلیل قیمت بسیار کمتر از غازهای مولد
+            بهترین انتخاب برای شروع پرورش قوغاز بشمار می‌روند .
+          </p>
+        </div>
+      </div>
+
+      <div className="row justify-content-md-around flex-row-reverse mb-5">
+        <div className="col-sm-12 col-md-5 order-2 order-md-1 sec-img max-height">
+          <Image src="/images/banner1.jpg" alt="tarempela طارم پلا" layout="responsive" width={700} height={475} />
+        </div>
+        <div className="col-sm-12 col-md-7 order-1 order-md-2 d-flex flex-column justify-content-md-center mb-3 mb-lg-0">
+          <h1 className="text-right mb-5">بچه غاز اوکراینی</h1>
+          <p>
+            قوغازها در سال‌های اخیر علاقه مردم را به خود جذب کرده است. دراین بین بچه غازهای اوکراینی به‌دلیل قیمت بسیار کمتر از غازهای مولد
+            بهترین انتخاب برای شروع پرورش قوغاز بشمار می‌روند .
+          </p>
+        </div>
+      </div>
+
+      <div className="row justify-content-md-around mb-5">
+        <div className="col-sm-12 col-md-5 order-2 order-md-1 sec-img max-height">
+          <Image src="/images/banner1.jpg" alt="tarempela طارم پلا" layout="responsive" width={700} height={475} />
+        </div>
+        <div className="col-sm-12 col-md-7 order-1 order-md-2 d-flex flex-column justify-content-md-center mb-3 mb-lg-0">
+          <h1 className="text-right mb-5">بچه غاز اوکراینی</h1>
+          <p>
+            قوغازها در سال‌های اخیر علاقه مردم را به خود جذب کرده است. دراین بین بچه غازهای اوکراینی به‌دلیل قیمت بسیار کمتر از غازهای مولد
+            بهترین انتخاب برای شروع پرورش قوغاز بشمار می‌روند .
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
