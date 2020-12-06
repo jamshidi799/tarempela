@@ -6,6 +6,17 @@ export default function Header() {
   return (
     <>
       <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZESH90RV1"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-RZESH90RV1');`,
+          }}
+        />
+
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="طارم پلا برنج طارم درجه یک مازندران ارسال به تمام نقاط ایران" />
@@ -20,18 +31,6 @@ export default function Header() {
           content="https://drive.google.https://drive.google.com/uc?export=download&id=1J8Uu703fgfUD_C2vx96kNeatYEBV2yw9com/file/d/1J8Uu703fgfUD_C2vx96kNeatYEBV2yw9/view?usp=sharing"
         />
         <meta name="google-site-verification" content="ZtmciE-XG3LcOjDs5SjrppiQGqSPFZK446hs2uUJjPE" />
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZESH90RV1"></script>
-        <script></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', 'G-RZESH90RV1');`,
-          }}
-        />
 
         {/* <script
           dangerouslySetInnerHTML={{
