@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
         <h1 className={styles.blog_heading}>اطلاعات بیشتر درمورد انواع برنج و طرز پخت</h1>
         <Posts posts={allPostsData} />
       </section>
-      <Parallax />
+      {/* <Parallax /> */}
       <div className="container">
         <Steps />
         <Questions />
