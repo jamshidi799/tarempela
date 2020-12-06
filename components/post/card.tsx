@@ -26,9 +26,9 @@ export default function PostCard({ title, id, date }) {
         </CardMedia>
         {/* <CardMedia component="img" alt="Contemplative Reptile" height="140" image={`/images/${id}.png`} title="Contemplative Reptile" /> */}
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          {/* <Typography gutterBottom variant="h5" component="h2">
             {id}
-          </Typography>
+          </Typography> */}
           <Typography variant="body2" color="textSecondary" component="p">
             {title}
           </Typography>
