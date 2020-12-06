@@ -22,7 +22,7 @@ export default function Post({ postData, allPostsData }) {
             </div>
           </div>
         </div>
-        <Image src={`/images/${postData.id}.png`} alt="Picture of the author" layout="responsive" width={700} height={475} />
+        <Image src={`/images/${postData.id}.webp`} alt="Picture of the author" layout="responsive" width={700} height={475} />
         <div className="container">
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} className={style.content} />
           <div>

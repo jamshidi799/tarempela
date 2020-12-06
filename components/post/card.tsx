@@ -22,7 +22,7 @@ export default function PostCard({ title, id, date }) {
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia className={style.image_wrapper}>
-          <Image src={`/images/${id}.png`} alt="tarempella" layout="fill" objectFit="cover" />
+          <Image src={`/images/${id}.webp`} alt="tarempella" layout="fill" objectFit="cover" />
         </CardMedia>
         {/* <CardMedia component="img" alt="Contemplative Reptile" height="140" image={`/images/${id}.png`} title="Contemplative Reptile" /> */}
         <CardContent>

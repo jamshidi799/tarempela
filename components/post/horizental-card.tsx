@@ -7,7 +7,7 @@ export default function HorizentalPostCard({ title, id, date }) {
   return (
     <div className={style.horizental_card}>
       <div className={style.image_wrapper}>
-        <Image src={`/images/${id}.png`} alt="tarempella" layout="fill" objectFit="cover" />
+        <Image src={`/images/${id}.webp`} alt="tarempella" layout="fill" objectFit="cover" />
       </div>
       <div className={style.content}>
         <Typography color="textSecondary" className="mb-3">
