@@ -26,10 +26,7 @@ export default function Header() {
         <meta property="og:url" content="http://tarempela.ir/" />
         <meta property="og:description" content="طارم پلا برنج طارم درجه یک مازندران ارسال به تمام نقاط ایران" />
         <meta property="og:type" content="business.business" />
-        <meta
-          property="og:image"
-          content="https://drive.google.https://drive.google.com/uc?export=download&id=1J8Uu703fgfUD_C2vx96kNeatYEBV2yw9com/file/d/1J8Uu703fgfUD_C2vx96kNeatYEBV2yw9/view?usp=sharing"
-        />
+        <meta property="og:image" content="https://drive.google.com/uc?export=download&id=1J8Uu703fgfUD_C2vx96kNeatYEBV2yw9" />
         <meta name="google-site-verification" content="ZtmciE-XG3LcOjDs5SjrppiQGqSPFZK446hs2uUJjPE" />
 
         {/* <script
