@@ -15,6 +15,16 @@
   .info {
     margin-right: 10px;
     font-size: $font-md;
+    color: white;
+    &:hover {
+      color: $primary;
+    }
+  }
+  .icon {
+    cursor: pointer;
+    &:hover {
+      color: $primary;
+    }
   }
   .copyRight {
     text-align: center;

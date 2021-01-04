@@ -17,17 +17,21 @@ export default function Footer() {
           </div>
           <div className="col-6 col-lg-4">
             <h1>تماس باما</h1>
-            <div className="d-flex align-items-center mb-3">
+            {/* <div className="d-flex align-items-center mb-3">
               <Phone />
               <h6 className={style.info}>0911 127 6818</h6>
+            </div> */}
+            <div className="d-flex align-items-center mb-3">
+              <Phone className={style.icon} />
+              <a href="tel:09111276818" className={style.info}>
+                0911 127 6818
+              </a>
             </div>
             <div className="d-flex align-items-center mb-3">
-              <Phone />
-              <h6 className={style.info}>0911 127 6818</h6>
-            </div>
-            <div className="d-flex align-items-center mb-3">
-              <Email />
-              <h6 className={style.info}>tarempela@gmail.com</h6>
+              <Email className={style.icon} />
+              <a href="mailto:tarempela@gmail.com" className={style.info}>
+                tarempela@gmail.com
+              </a>
             </div>
           </div>
           <div className="col-6 col-lg-4">

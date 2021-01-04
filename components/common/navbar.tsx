@@ -39,32 +39,27 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function Navbar({ handleThemeChange, isDark }) {
   const classes = useStyles();
 
-  useEffect(() => {
-    console.log(isDark);
-  }, []);
-
   return (
     <div className={style.navbar}>
       <CssBaseline />
       <HideOnScroll>
         <AppBar color="inherit" className={classes.root}>
           <Toolbar>
-            <Link href="/blog" passHref>
-              <a className={style.nav_item}>بلاگ</a>
-            </Link>
-            <Link href="/" passHref>
-              <a className={style.nav_item}>خانه</a>
-            </Link>
-            <Link href="/aboutUs" passHref>
-              <a className={style.nav_item}>درباره طارم‌پلا</a>
-            </Link>
-
-            {/* <span className={style.nav_item}>{isDark ? 'تاریک' : 'روشن'}</span>
-            <Switch checked={isDark} onChange={handleThemeChange} color="primary" /> */}
+            <div className="d-flex" style={{ width: '100%' }}>
+              <Link href="/blog" passHref>
+                <a className={style.nav_item}>بلاگ</a>
+              </Link>
+              <Link href="/" passHref>
+                <a className={style.nav_item}>خانه</a>
+              </Link>
+              <Link href="/aboutUs" passHref>
+                <a className={style.nav_item}>درباره طارم‌پلا</a>
+              </Link>
+              <div className={style.nav_logo}>طارم‌پلا</div>
+            </div>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      <Toolbar />
     </div>
   );
 }
