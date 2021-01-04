@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import style from './step.module.scss';
+import Link from 'next/link';
 
 export default function Steps() {
   return (
@@ -27,6 +27,13 @@ export default function Steps() {
             تمامی برنج‌های طارمی که به‌ دست مشتریان می‌رسد توسط دستگاه سورتینگ (sorting) می‌شود. یعنی دانه‌های طارم از یک غربال عبور داده‌
             می‌شوند و دانه‌های کوچکتر و نازکتر از بقیه جدا می‌شوند و باعث می‌شود برنج خروجی کیفیت بالاتری داشته باشد.
           </h3>
+          <h3>
+            برای اطاعات بیشتر به پست{' '}
+            <Link href="/blog/journey" passHref>
+              <a className="route-link">مسیری که برنج طی می‌کند تا به دست مشتری برسد</a>
+            </Link>{' '}
+            مراجعه کنید.
+          </h3>
         </div>
       </div>
 
@@ -41,6 +48,13 @@ export default function Steps() {
           </h3>
         </div>
       </div>
+      <style jsx>
+        {`
+          .route-link {
+            color: #04ff04;
+          }
+        `}
+      </style>
     </div>
   );
 }

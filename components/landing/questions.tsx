@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
@@ -41,9 +42,8 @@ export default function Questions() {
         </AccordionSummary>
         <AccordionDetails>
           <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-            در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-            کتابهای زیادی در شصت و سه درصد گذشته
+            در حال حاضر امکان سفارش آنلاین از طریق سایت وجود ندارد و باید به شماره تماسی که در سایت و یا روی کیسه‌های برنج درج شده است تماس
+            بگیرید اما تیم امکان سفارش آنلاین نیز به‌زودی فراهم می‌شود.
           </p>
         </AccordionDetails>
       </Accordion>
@@ -54,9 +54,8 @@ export default function Questions() {
         </AccordionSummary>
         <AccordionDetails>
           <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-            در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-            کتابهای زیادی در شصت و سه درصد گذشته
+            مجموعه طارم‌پلا از دو طریق پست و باربری برنج‌ها را ارسال می‌کند. بنابراین هنگام ثبت سفارش شما تعیین می‌کنید که با کدام روش
+            راحت‌تر هستید. البته معمولا باربری کم هزینه‌تر است.
           </p>
         </AccordionDetails>
       </Accordion>
@@ -67,12 +66,21 @@ export default function Questions() {
         </AccordionSummary>
         <AccordionDetails>
           <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-            در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-            کتابهای زیادی در شصت و سه درصد گذشته
+            به پست{' '}
+            <Link href="/blog/cook" passHref>
+              <a className="route-link">روش صحیح پخت برنج</a>
+            </Link>{' '}
+            مراجعه کنید
           </p>
         </AccordionDetails>
       </Accordion>
+      <style jsx>
+        {`
+          .route-link {
+            color: #04ff04;
+          }
+        `}
+      </style>
     </div>
   );
 }
