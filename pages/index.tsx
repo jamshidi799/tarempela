@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Hero from '../components/landing/hero';
-import Parallax from '../components/landing/parallax';
 import Questions from '../components/landing/questions';
 import Steps from '../components/landing/steps';
 import Layout from '../components/layout';
@@ -16,13 +15,10 @@ export default function Home({ allPostsData }) {
       </Head>
 
       <Hero />
-      <section className="container mt-5 mb-5">
+      <div className="container mt-5 mb-5">
+        <Steps />
         <h1 className={styles.blog_heading}>اطلاعات بیشتر درمورد انواع برنج و طرز پخت</h1>
         <Posts posts={allPostsData} />
-      </section>
-      {/* <Parallax /> */}
-      <div className="container">
-        <Steps />
         <Questions />
       </div>
     </Layout>
