@@ -1,21 +1,30 @@
 .blog {
-  margin-top: 50px;
+  margin-top: 100px;
   padding-bottom: 100px;
+  max-width: 680px;
+  margin: 100px auto;
+  align-self: center;
   .title {
     font-size: 35px;
     font-weight: 600;
+    margin-bottom: 30px;
     .date {
       font-size: 25px;
       font-weight: 400;
     }
   }
   .content {
-    max-width: 800px;
-    margin: 40px auto;
     font-size: 20px;
+    margin-top: 70px;
     img {
       margin: 20px auto;
       width: 100%;
+    }
+  }
+  p {
+    display: flex;
+    img {
+      justify-self: center;
     }
   }
 

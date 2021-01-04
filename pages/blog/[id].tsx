@@ -13,23 +13,21 @@ export default function Post({ postData, allPostsData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article className={style.blog}>
-        <div className="container">
+      <div className="d-flex">
+        <article className={style.blog}>
           <div className={style.title}>
             <h1>{postData.title}</h1>
-            <div className={style.date}>
+            {/* <div className={style.date}>
               <Date dateString={postData.date} />
-            </div>
+            </div> */}
           </div>
-        </div>
-        <Image src={`/images/${postData.id}.webp`} alt="طارم پلا" layout="responsive" width={700} height={475} />
-        <div className="container">
+          <Image src={`/images/${postData.id}.webp`} alt="طارم پلا" layout="responsive" width={700} height={475} />
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} className={style.content} />
           <div>
             <Posts posts={allPostsData} />
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </Layout>
   );
 }
