@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="d-flex align-items-center mb-3">
               <Phone className={style.icon} />
               <a href="tel:09111276818" className={style.info}>
-                0911 127 6818
+                6818 127 0911
               </a>
             </div>
             <div className="d-flex align-items-center mb-3">
