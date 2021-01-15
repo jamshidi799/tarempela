@@ -1,4 +1,9 @@
+@import 'styles/mixins.scss';
+
 .blog_heading {
   font-size: 35px;
   margin-bottom: 20px;
+  @include not-md {
+    text-align: center;
+  }
 }
