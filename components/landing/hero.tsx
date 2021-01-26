@@ -1,12 +1,18 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import style from './hero.module.scss';
+import Fade from '@material-ui/core/Fade';
 
 export default function Hero() {
   const heroRef = useRef();
   const popupRef = useRef();
   const [index, setIndex] = useState(0);
-  useEffect(() => {}, []);
+  const [slider, setSlider] = useState(0)
+  useEffect(() => {
+    const interval = setTimeout(() => setSlider(slider+1), 4000)
+    return () => clearTimeout(interval)
+  }, [slider]);
+
 
   const onMove = e => {
     setIndex(index + 1);
@@ -27,11 +33,24 @@ export default function Hero() {
     popup.style.transform = 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
   };
 
+  const renderSlideImage = () => {
+    switch (slider % 3) {
+      case 1:
+        return <Image src="/images/parallax.webp" alt="طارم‌پلا" layout="fill" /> 
+      case 2:
+        return <Image src="/images/hero-1.webp" alt="طارم‌پلا" layout="fill" />
+      default:
+        return <Image src="/images/hero-2.webp" alt="طارم‌پلا" layout="fill" />
+    }
+  }
+
   return (
     <div className={style.hero} onMouseMove={onMove} ref={heroRef}>
       <div className={style.image_wrapper}>
-        <Image src="/images/parallax.webp" alt="Picture of the author" layout="fill" />
-      </div>
+    
+        {renderSlideImage()}
+        
+        </div>
       <div className={style.overlay}></div>
       <div className={style.popup} ref={popupRef}>
         <h1 className="m-3 text-center">برنج طارم پلا</h1>
