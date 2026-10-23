@@ -10,7 +10,7 @@ export default function Hero() {
   const [slider, setSlider] = useState(0)
   useEffect(() => {
     for (let i = 1; i < 4; i++) {
-      const slide = document.querySelector(`.slide-${i}`)
+      const slide = document.querySelector<HTMLElement>(`.slide-${i}`)
       if (!slide) continue;
       slide.style.opacity = i === slider % 3 + 1 ? '1' : '0';
     }
