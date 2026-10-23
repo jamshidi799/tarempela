@@ -11,7 +11,8 @@ export default function Hero() {
   useEffect(() => {
     for (let i = 1; i < 4; i++) {
       const slide = document.querySelector(`.slide-${i}`)
-      i === slider % 3 + 1 ? slide.setAttribute("style", "opacity: 1"): slide.setAttribute("style", "opacity: 0")
+      if (!slide) continue;
+      slide.style.opacity = i === slider % 3 + 1 ? '1' : '0';
     }
     const interval = setTimeout(() => setSlider(slider+1), 4000)
     return () => clearTimeout(interval)
@@ -40,9 +41,9 @@ export default function Hero() {
   return (
     <div className={style.hero} onMouseMove={onMove} ref={heroRef}>
       <div className={style.image_wrapper}>
-      <Image className="slide-1" src="/images/parallax.webp" alt="طارم‌پلا" layout="fill" /> 
-      <Image className="slide-2" src="/images/hero-1.webp" alt="طارم‌پلا" layout="fill" />
-      <Image className="slide-3" src="/images/hero-2.webp" alt="طارم‌پلا" layout="fill" />
+      <Image className="slide-1" src="/images/parallax.webp" alt="طارم‌پلا" layout="fill" objectFit="cover" objectPosition="center" />
+      <Image className="slide-2" src="/images/hero-1.webp" alt="طارم‌پلا" layout="fill" objectFit="cover" objectPosition="center" />
+      <Image className="slide-3" src="/images/hero-2.webp" alt="طارم‌پلا" layout="fill" objectFit="cover" objectPosition="center" />
         </div>
       <div className={style.overlay}></div>
       <div className={style.popup} ref={popupRef}>

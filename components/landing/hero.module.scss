@@ -23,6 +23,14 @@
     }
     img {
       position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover;
+      object-position: center;
       transition: opacity 0.5s ease-in;
     }
 
